@@ -1,0 +1,17 @@
+A simple overnight hack to demonstrate the speed of building go programs. 
+
+You have a list of simple go programs and a special go program named build-go-program-on-mouseover.go
+
+If you build and execute the above special go program, it will display a list of filenames in the webpage loaded by the above server. On moving your mouse over a program name, the named program is loaded from the disk, built and then executed in a shell, its output is captured and the output is sent to the original webpage. The built binaries are not cleared so as to avoid any locking.
+
+To demonstrate the real compiling speed of go, we should ideally be using a large project with plenty of transitive imports. This is merely a cool thing.
+
+
+License
+========
+All the source files are licensed under Creative Commons Zero License 1.0 http://creativecommons.org/publicdomain/zero/1.0/
+
+
+TODO:
+=====
+Though this project was started with an aim of demoing a cool thing in a gotalk, it can be further improved by loading the file list using the appropriate os and template packages. We can make this build any file that we want and not just go files. It will be a good beginner exercise.
